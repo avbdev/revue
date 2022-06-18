@@ -22,19 +22,23 @@ const ResumeOne: React.FC = () => {
                 <div id="profile-info-section">
                     <div className="phone-number">
                         <code>
-                            {sampleData.profile.phone}
+                            <a href={`tel:${sampleData.profile.phone}`}>{sampleData.profile.phone}</a>
                         </code>
                     </div>
 
                     <div className="email">
                         <code>
-                            {sampleData.profile.email}
+                            <a href={`mailto:${sampleData.profile.email}`}>
+                                {sampleData.profile.email}
+                            </a>
                         </code>
                     </div>
 
                     <div className="address">
                         <code>
-                            {address}
+                            <address>
+                                {address}
+                            </address>
                         </code>
                     </div>
 
