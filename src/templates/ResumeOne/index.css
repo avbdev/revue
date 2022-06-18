@@ -1,0 +1,17 @@
+.resume-container {
+    display: flex;
+    /* margin-left: 23%; */
+    /* flex-direction: column; */
+}
+
+.resume-content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 6
+}
+
+.resume-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    flex: 3
+}

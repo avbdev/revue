@@ -1,11 +1,10 @@
 import React from 'react';
 import TemplatePicker, { TemplateTypes } from './templates';
-import ResumeOne from './templates/ResumeOne/ResumeOne';
+import "./App.css";
 
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
     <div className="app-container">
-      {/* <ResumeOne /> */}
       <TemplatePicker type={TemplateTypes.ResumeOne} />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeOne from "./ResumeOne/ResumeOne";
+import ResumeOne from "./ResumeOne";
 
 export enum TemplateTypes {
     ResumeOne = "ResumeOne"

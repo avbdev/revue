@@ -20,7 +20,8 @@ export const EducationSection: React.FC = () => {
                 </div>
 
                 <div key={`${eduDetail.objectId}-institute-container`}>
-                    <p key={`${eduDetail.objectId}-institute`}>{eduDetail.institute}, {eduDetail.location.city === "" ? eduDetail.location.country : eduDetail.location.city}</p>
+                    {/* <p key={`${eduDetail.objectId}-institute`}>{eduDetail.institute}, {eduDetail.location.city === "" ? eduDetail.location.country : eduDetail.location.city}</p> */}
+                    <p key={`${eduDetail.objectId}-institute`}>{eduDetail.institute}, {eduDetail.location.country}</p>
                 </div>
             </div>
         })}

@@ -1,5 +1,6 @@
 import React from "react";
 import { sampleData } from "./data";
+import { Badge, Group } from '@mantine/core';
 
 export const SkillSection: React.FC = () => {
 
@@ -17,10 +18,13 @@ export const SkillSection: React.FC = () => {
 
                 <div key={`${skill.skillId}-skill-name`}>
                     <code>
-                        {skill.customSkills.map((customSkill, index) => {
+                        <Group>
+                            {skill.customSkills.map((customSkill, index) => {
 
-                            return <p key={`${skill.skillId}-${index}}`}>{customSkill}</p>
-                        })}
+                                // return <p key={`${skill.skillId}-${index}}`}>{customSkill}</p>
+                                return <Badge key={`${skill.skillId}-${index}-badge`} variant="gradient" gradient={{ from: 'orange', to: 'red' }}>{customSkill}</Badge>
+                            })}
+                        </Group>
                     </code>
                 </div>
             </div>

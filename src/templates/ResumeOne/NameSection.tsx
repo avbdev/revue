@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { sampleData } from "./data";
+import "./NameSection.css"
 
 export const NameSection: React.FC = () => {
     const { city, state, zip, country } = sampleData.profile.location;
-
     const address = `${city}, ${state}, ${zip}, ${country}`
+
 
     return <div className="name">
 
-        <div id="profile-name-section">
-            <div><h1>{sampleData.profile.preferredName}</h1></div>
+        <div id="profile-name-section" >
+            <div className="profile-name-section">
+                <strong>{sampleData.profile.preferredName}</strong>
+            </div>
             <code>{sampleData.profile.role}</code>
         </div>
 
