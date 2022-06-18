@@ -1,0 +1,111 @@
+/* Sidebar */
+
+.sidebar {
+    position: absolute;
+    width: 1268px;
+    height: 3580px;
+    left: 1585px;
+    top: 0px;
+}
+
+/* Name Container */
+
+.name {
+    position: absolute;
+    width: 918px;
+    height: 413px;
+    left: 225px;
+    top: 166px;
+}
+
+/* Intro
+
+Intro Component
+*/
+.intro {
+    position: absolute;
+    width: 820px;
+    height: 640px;
+    left: 1585px;
+    top: 40px;
+}
+
+
+
+
+/* TimeLine */
+
+.timeline {
+    position: absolute;
+    width: 6px;
+    height: 2854px;
+    left: 228px;
+    top: 729px;
+
+    background: linear-gradient(180deg, #484FA0 7.29%, #277FC3 51.04%, #04B2E7 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+
+/* Activities */
+
+.activities {
+    position: absolute;
+    width: 1297px;
+    height: 1367px;
+    left: 190px;
+    top: 2100px;
+}
+
+
+
+/* Projects */
+
+.projects {
+    position: absolute;
+    width: 1305px;
+    height: 700px;
+    left: 190px;
+    top: 1338px;
+
+}
+
+/* Work Experience */
+
+.work-experience {
+    position: absolute;
+    width: 749px;
+    height: 464px;
+    left: 190px;
+    top: 787px;
+}
+
+/* Technical Skills_Full_Length */
+
+.skills {
+    position: absolute;
+    width: 2341px;
+    height: 2096px;
+    left: 1616px;
+    top: 1300px;
+
+}
+
+/* Education */
+
+
+/* Auto layout */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 81px;
+
+    position: absolute;
+    width: 704px;
+    height: 504px;
+    left: 1643px;
+    top: 787px;
+}
