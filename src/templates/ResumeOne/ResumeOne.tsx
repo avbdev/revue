@@ -1,6 +1,6 @@
 import React from "react";
 import { sampleData } from "./data";
-import "./ResumeOne.css"
+// import "./ResumeOne.css"
 
 const ResumeOne: React.FC = () => {
     const { city, state, zip, country } = sampleData.profile.location;
@@ -44,15 +44,15 @@ const ResumeOne: React.FC = () => {
 
             <div className="work-experience">
                 <div id="work-title-header">
-                    Work Experience
+                    <h2> Work Experience</h2>
                 </div>
 
-                {sampleData.workExperience.map((wex, index)=>{
+                {sampleData.workExperience.map((wex, index) => {
 
                     return <div key={wex.wexId}>
                         <div key={`${wex.wexId}-company-details`}>
-                            <p><strong>{wex.companyName}:</strong> {wex.role}, {wex.startDate} till {wex.endDate}</p>
-                            
+                            <p><strong>{wex.companyName}:</strong> {wex.role}, {wex.startDate} - {wex.endDate}</p>
+
                         </div>
 
                         <div key={`${wex.wexId}-location-details`}>
@@ -65,11 +65,42 @@ const ResumeOne: React.FC = () => {
             </div>
 
             <div className="projects">
-                Projects
+                <div id="project-title-header">
+                    <h2>Projects</h2>
+                </div>
+                {sampleData.projects.map((project, index) => {
+                    return <div key={project.projectId}>
+                        <div key={`${project.projectId}-project-name`}>
+                            <p><strong>{project.projectName}</strong></p>
+
+                        </div>
+
+                        <div key={`${project.projectId}-project-role`}>
+                            <code>
+                                Role: {project.role}
+                            </code>
+                        </div>
+                    </div>
+                })
+                }
+
             </div>
 
             <div className="activities">
-                Activities
+                <div id="activities-title-header">
+                    <h2>Activities</h2>
+                </div>
+                <ul>
+                    {sampleData.primeActivities.map((primeActivity, index) => {
+                        return <li><div key={primeActivity.activityId}>
+
+                            <p key={`${primeActivity.activityId}`}>{primeActivity.activitiyDescription}</p>
+
+                        </div>
+                        </li>
+                    })
+                    }
+                </ul>
             </div>
         </div>
 
@@ -85,11 +116,50 @@ const ResumeOne: React.FC = () => {
             </div>
 
             <div className="education">
-                NWMSU
+                <div id="education-title-header">
+                    <h2>Education</h2>
+                </div>
+
+                {sampleData.educationDetails.map((eduDetail, index) => {
+
+                    return <div key={eduDetail.objectId}>
+                        <div key={`${eduDetail.objectId}-title-container`}>
+                            <p key={`${eduDetail.objectId}-title`}><strong>{eduDetail.title}</strong></p>
+                        </div>
+
+                        <div key={`${eduDetail.objectId}-timeline-container`}>
+                            <p key={`${eduDetail.objectId}-timeline`}><code>{eduDetail.startDate} - {eduDetail.endDate}</code></p>
+                        </div>
+
+                        <div key={`${eduDetail.objectId}-institute-container`}>
+                            <p key={`${eduDetail.objectId}-institute`}>{eduDetail.institute}, {eduDetail.location.city === "" ? eduDetail.location.country : eduDetail.location.city}</p>
+                        </div>
+                    </div>
+                })}
             </div>
 
             <div className="skills">
-                React
+                <div id="skills-title-header">
+                    <h2>Technical Skills</h2>
+                </div>
+
+                {sampleData.skills.map((skill, index) => {
+                    return <div key={skill.skillId}>
+                        <div key={`${skill.skillId}-skill-category`}>
+                            <p><strong>{skill.skillCategory}</strong></p>
+
+                        </div>
+
+                        <div key={`${skill.skillId}-skill-name`}>
+                            <code>
+                                {skill.customSkills.map((customSkill, index) => {
+
+                                    return <p key={`${skill.skillId}-${index}}`}>{customSkill}</p>
+                                })}
+                            </code>
+                        </div>
+                    </div>
+                })}
             </div>
         </div>
 

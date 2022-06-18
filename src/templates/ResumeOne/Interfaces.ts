@@ -31,10 +31,13 @@ export interface User {
 export interface EducationDetail {
     objectId: string;
     type: string;
+    title: string;
+    institute: string;
     majors: string;
     startDate: string;
     endDate: string;
     summary: string;
+    location: Location;
 }
 
 export interface Activity {
@@ -68,6 +71,7 @@ export interface Location {
 
 export interface Project {
     projectId: string;
+    projectName: string;
     role: string;
     companyId: string;
     companyName: string;
@@ -78,7 +82,7 @@ export interface Project {
 export interface Skill {
     skillId: string;
     type: string;
-    customSkillType: string;
+    skillCategory: string;
     customSkills: any[];
 }
 
