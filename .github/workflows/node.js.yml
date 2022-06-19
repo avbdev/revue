@@ -30,8 +30,8 @@ jobs:
     - run: yarn ci
     - run: yarn build --if-present
     
-    - name: Build & deploy
-        run: yarn deploy
+    - name: Deploy
+        run: npm run deploy
         env:
           CI: false
           FIREBASE_TOKEN: ${{ secrets.FirebaseHostingToken }}
