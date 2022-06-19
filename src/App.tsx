@@ -3,12 +3,11 @@ import { SpotlightAction, SpotlightProvider } from "@mantine/spotlight";
 import React from "react";
 import { Dashboard, FileText, Home, Menu2 } from "tabler-icons-react";
 import "./App.css";
-import { AppNavbar } from "./components/AppNavbar";
-import { Logo } from "./components/Logo";
 import TemplatePicker, { TemplateTypes } from "./template-collection";
 import { Outlet, Route, Routes } from 'react-router-dom';
-import { NewResume } from "./components/Resume/NewResume";
+import { NewResume } from "./pages/resume/NewResume";
 import ResumeHomePage from "./pages/resume";
+import { AppNavbar } from "./components/Organisms/AppNavbar";
 
 const actions: SpotlightAction[] = [
   {
@@ -61,7 +60,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<><Outlet /></>}>
                 <Route index element={<>Home Page</>} />
-                
+
                 <Route path="resume">
                   <Route path=":resumeId" element={<><TemplatePicker type={TemplateTypes.ResumeOne} /></>} />
                   <Route path="new" element={<NewResume />} />
@@ -72,7 +71,7 @@ const App: React.FC = () => {
               </Route>
             </Routes>
             {/* Your application here */}
-            
+
           </AppShell>
         </SpotlightProvider>
       </MantineProvider>

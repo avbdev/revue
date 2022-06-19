@@ -3,7 +3,7 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 import { Plus } from "tabler-icons-react";
 
-export const ResumeHome: FC = () => {
+export const AddResumeButton: FC = () => {
 
     const theme = useMantineTheme();
     const secondaryColor = theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7];

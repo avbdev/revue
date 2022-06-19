@@ -1,18 +1,22 @@
 export interface Resume {
   resumeId: string;
+
   resumeTemplate: string;
   introduction: string;
+
   createdAt: string;
   lastModifiedAt: string;
   lastModifiedBy: string;
   currentRevision: string;
   revisions: any[];
+
   profile: Profile;
   educationDetails: EducationDetail[];
   workExperience: WorkExperience[];
   projects: Project[];
   primeActivities: Activity[];
   skills: Skill[];
+
   currentUser: User;
   owner: User;
   contributors: User[];
@@ -49,14 +53,14 @@ export interface Activity {
 
 export interface Profile {
   profileId: string;
-  firstNme: string;
-  middleName: string;
+  firstName: string;
+  middleName?: string;
   lastName: string;
   fullName: string;
-  preferredName: string;
+  preferredName?: string;
   role: string;
   phone: string;
-  phoneType: string;
+  phoneType?: string;
   location: Location;
   email: string;
 }

@@ -1,13 +1,13 @@
 import { FC } from "react";
 import { Outlet } from "react-router";
-import { ResumeHome } from "../../components/Resume/Home";
+import { AddResumeButton } from "../../components/Organisms/Resume/AddResumeButton";
 
 const ResumeHomePage: FC = () => {
 
     return <>
 
 
-        <ResumeHome />
+        <AddResumeButton />
 
         <Outlet />
     </>
