@@ -1,9 +1,9 @@
-import React from "react";
-import { ChevronRight, ChevronLeft } from "tabler-icons-react";
-import { UnstyledButton, Group, Avatar, Text, Box, useMantineTheme } from "@mantine/core";
+import { Avatar, Box, Group, Text, UnstyledButton, useMantineTheme } from "@mantine/core";
+import { FC } from "react";
+import { ChevronLeft, ChevronRight } from "tabler-icons-react";
 import { sampleData } from "../../../template-collection/ResumeOne/data";
 
-export function NavbarUser() {
+export const NavbarUser: FC = () => {
   const theme = useMantineTheme();
 
   return (
@@ -42,4 +42,4 @@ export function NavbarUser() {
       </UnstyledButton>
     </Box>
   );
-}
+};

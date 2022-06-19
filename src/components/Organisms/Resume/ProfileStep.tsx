@@ -1,4 +1,3 @@
-import { Input, InputWrapper } from "@mantine/core";
 import { FC, useEffect, useState } from "react";
 import { sampleData } from "../../../template-collection/ResumeOne/data";
 import { Profile } from "../../../template-collection/ResumeOne/Interfaces";
@@ -88,7 +87,7 @@ export const ProfileStep: FC = () => {
     <>
       <div id="profile-step-container" className="grid-items">
         {inputData.map((data, index) => {
-          const inputClassName = index === inputData.length - 1 && index % 2 !== 0 ? "grid-item" : "grid-item-wide";
+          // const inputClassName = index === inputData.length - 1 && index % 2 !== 0 ? "grid-item" : "grid-item-wide";
           return (
             <div key={`profile-input-${data.type}-${index}-container`} className={"grid-item"}>
               <AppInput

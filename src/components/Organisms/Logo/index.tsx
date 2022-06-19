@@ -1,6 +1,5 @@
 import { ColorScheme, Image } from "@mantine/core";
 import { LogoImages } from "../../../utils/Constants";
-import LogoWhite from "../../public/images/logo-white.png";
 
 export function Logo({ colorScheme }: { colorScheme: ColorScheme }) {
   const simpleLogo = (

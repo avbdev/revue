@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from "react";
 import { sampleData } from "../../../template-collection/ResumeOne/data";
-import { EducationDetail, Skill } from "../../../template-collection/ResumeOne/Interfaces";
+import { Skill } from "../../../template-collection/ResumeOne/Interfaces";
 import { AppInput } from "../../Molecules/AppInput";
 import "./Profiles.css";
 
@@ -62,7 +62,7 @@ export const SkillsStep: FC = () => {
   return (
     <div id="work-experience-container" className="grid-items">
       {inputData.map((data, index) => {
-        const inputClassName = index === inputData.length - 1 && index % 2 !== 0 ? "grid-item" : "grid-item-wide";
+        // const inputClassName = index === inputData.length - 1 && index % 2 !== 0 ? "grid-item" : "grid-item-wide";
         return (
           <div key={`skills-input-${data.type}-${index}-container`} className={"grid-item"}>
             <AppInput

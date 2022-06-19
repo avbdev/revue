@@ -1,13 +1,13 @@
-import { ActionIcon, AppShell, CloseButton, Header, MantineProvider } from "@mantine/core";
+import { ActionIcon, AppShell, Header, MantineProvider } from "@mantine/core";
 import { SpotlightAction, SpotlightProvider } from "@mantine/spotlight";
 import React from "react";
+import { Outlet, Route, Routes } from "react-router-dom";
 import { Dashboard, FileText, Home, Menu2 } from "tabler-icons-react";
 import "./App.css";
-import TemplatePicker, { TemplateTypes } from "./template-collection";
-import { Outlet, Route, Routes } from 'react-router-dom';
-import { NewResume } from "./pages/resume/NewResume";
-import ResumeHomePage from "./pages/resume";
 import { AppNavbar } from "./components/Organisms/AppNavbar";
+import ResumeHomePage from "./pages/resume";
+import { NewResume } from "./pages/resume/NewResume";
+import TemplatePicker, { TemplateTypes } from "./template-collection";
 
 const actions: SpotlightAction[] = [
   {
@@ -47,7 +47,9 @@ const App: React.FC = () => {
             navbar={<AppNavbar />}
             header={
               <Header height={40} p="xs">
-                <ActionIcon variant="hover"><Menu2 size={16} /></ActionIcon>
+                <ActionIcon variant="hover">
+                  <Menu2 size={16} />
+                </ActionIcon>
                 {/* <Logo colorScheme={"dark"} /> */}
                 {/* Header content */}
                 {/* Resume Builder */}
@@ -58,11 +60,25 @@ const App: React.FC = () => {
             })}
           >
             <Routes>
-              <Route path="/" element={<><Outlet /></>}>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Outlet />
+                  </>
+                }
+              >
                 <Route index element={<>Home Page</>} />
 
                 <Route path="resume">
-                  <Route path=":resumeId" element={<><TemplatePicker type={TemplateTypes.ResumeOne} /></>} />
+                  <Route
+                    path=":resumeId"
+                    element={
+                      <>
+                        <TemplatePicker type={TemplateTypes.ResumeOne} />
+                      </>
+                    }
+                  />
                   <Route path="new" element={<NewResume />} />
                   <Route index element={<ResumeHomePage />} />
                 </Route>
@@ -71,7 +87,6 @@ const App: React.FC = () => {
               </Route>
             </Routes>
             {/* Your application here */}
-
           </AppShell>
         </SpotlightProvider>
       </MantineProvider>
@@ -79,9 +94,5 @@ const App: React.FC = () => {
     </>
   );
 };
-
-
-
-
 
 export default App;

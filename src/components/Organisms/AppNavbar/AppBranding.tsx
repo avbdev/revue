@@ -1,8 +1,8 @@
-import { ActionIcon, Box, Group, useMantineColorScheme } from "@mantine/core";
-import { MoonStars, Sun } from "tabler-icons-react";
+import { Box, Group } from "@mantine/core";
+import { FC } from "react";
 import { Logo } from "../Logo";
 
-export const AppBranding: React.FC = () => {
+export const AppBranding: FC = () => {
   // const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
   return (

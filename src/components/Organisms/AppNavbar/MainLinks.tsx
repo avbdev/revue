@@ -1,7 +1,7 @@
+import { Group, Text, ThemeIcon, UnstyledButton } from "@mantine/core";
 import React from "react";
-import { GitPullRequest, AlertCircle, Messages, Database, Files, Template, Stack3 } from "tabler-icons-react";
-import { ThemeIcon, UnstyledButton, Group, Text } from "@mantine/core";
 import { Link } from "react-router-dom";
+import { Files, Messages, Stack3, Template } from "tabler-icons-react";
 
 interface MainLinkProps {
   icon: React.ReactNode;
