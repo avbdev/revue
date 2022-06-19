@@ -31,7 +31,7 @@ jobs:
     - run: yarn build --if-present
     
     - name: Deploy
-      run: npm run deploy:dev
-      env:
-          CI: false
-          FIREBASE_TOKEN: ${{ secrets.FirebaseHostingToken }}
+      run: yarn deploy:dev --token ${{ secrets.FirebaseHostingToken }}
+      # env:
+      #     CI: false
+      #     FIREBASE_TOKEN: ${{ secrets.FirebaseHostingToken }}
