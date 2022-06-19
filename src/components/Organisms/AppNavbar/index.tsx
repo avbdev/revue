@@ -1,6 +1,5 @@
 import { ActionIcon, Navbar } from "@mantine/core";
 import { Menu2 } from "tabler-icons-react";
-import { AppBranding } from "./AppBranding";
 import { MainLinks } from "./MainLinks";
 import { NavbarUser } from "./NavbarUser";
 

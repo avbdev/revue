@@ -1,8 +1,8 @@
-import { ActionIcon, AppShell, Header, Image, MantineProvider } from "@mantine/core";
+import { AppShell, Header, Image, MantineProvider } from "@mantine/core";
 import { SpotlightAction, SpotlightProvider } from "@mantine/spotlight";
 import React from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
-import { Dashboard, FileText, Home, Menu2 } from "tabler-icons-react";
+import { Dashboard, FileText, Home } from "tabler-icons-react";
 import "./App.css";
 import { AppNavbar } from "./components/Organisms/AppNavbar";
 import ResumeHomePage from "./pages/resume";
