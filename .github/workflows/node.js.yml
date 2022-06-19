@@ -29,8 +29,9 @@ jobs:
     - run: npm i -g yarn
     - run: yarn ci
     - run: yarn build --if-present
-    - run: npm run deploy
-        env:
+    
+    - name: Deploy
+      run: npm run deploy
+      env:
           CI: false
           FIREBASE_TOKEN: ${{ secrets.FirebaseHostingToken }}
-#     - run: npm test
