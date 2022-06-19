@@ -1,4 +1,4 @@
-import { ActionIcon, AppShell, Header, MantineProvider } from "@mantine/core";
+import { ActionIcon, AppShell, Header, Image, MantineProvider } from "@mantine/core";
 import { SpotlightAction, SpotlightProvider } from "@mantine/spotlight";
 import React from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
@@ -8,6 +8,7 @@ import { AppNavbar } from "./components/Organisms/AppNavbar";
 import ResumeHomePage from "./pages/resume";
 import { NewResume } from "./pages/resume/NewResume";
 import TemplatePicker, { TemplateTypes } from "./template-collection";
+import { LogoImages } from "./utils/Constants";
 
 const actions: SpotlightAction[] = [
   {
@@ -46,13 +47,21 @@ const App: React.FC = () => {
             padding="md"
             navbar={<AppNavbar />}
             header={
-              <Header height={40} p="xs">
-                <ActionIcon variant="hover">
-                  <Menu2 size={16} />
-                </ActionIcon>
-                {/* <Logo colorScheme={"dark"} /> */}
-                {/* Header content */}
-                {/* Resume Builder */}
+              <Header height={60} p="xs">
+                <div id="header-container" style={{ display: "flex", flexDirection: "row" }}>
+                  {/* <div id="toggle-navbar">
+                    <ActionIcon variant="hover">
+                      <Menu2 size={16} />
+                    </ActionIcon>
+                  </div> */}
+
+                  <div id="logo-container" style={{ display: "flex", height: 150, width: 100 }}>
+                    <Image src={LogoImages["dark"]} />
+                  </div>
+                  {/* <Logo colorScheme={"dark"} /> */}
+                  {/* Header content */}
+                  {/* Resume Builder */}
+                </div>
               </Header>
             }
             styles={(theme) => ({

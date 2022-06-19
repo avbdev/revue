@@ -1,6 +1,6 @@
 import { Box, Group } from "@mantine/core";
 import { FC } from "react";
-import { Logo } from "../Logo";
+import { Logo } from "../../Molecules/Logo";
 
 export const AppBranding: FC = () => {
   // const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -14,7 +14,7 @@ export const AppBranding: FC = () => {
         borderBottom: `1px solid ${theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[2]}`,
       })}
     >
-      <Logo colorScheme={"dark"} />
+      {/* <Logo colorScheme={"dark"} /> */}
       <Group position="apart">
         {/* <ActionIcon variant="default" onClick={() => {}} size={30}> */}
         {/* {colorScheme === "dark" ? <Sun size={16} /> : <MoonStars size={16} />} */}
