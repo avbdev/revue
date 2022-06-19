@@ -99,7 +99,7 @@ export const EducationStep: FC = () => {
   return (
     <div id="work-experience-container" className="grid-items">
       {inputData.map((data, index) => {
-        const inputClassName = index === inputData.length - 1 && index % 2 !== 0 ? "grid-item" : "grid-item-wide";
+        // const inputClassName = index === inputData.length - 1 && index % 2 !== 0 ? "grid-item" : "grid-item-wide";
         return (
           <div key={`edu-input-${data.type}-${index}-container`} className={"grid-item"}>
             <AppInput
