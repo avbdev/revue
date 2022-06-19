@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronRight, ChevronLeft } from "tabler-icons-react";
 import { UnstyledButton, Group, Avatar, Text, Box, useMantineTheme } from "@mantine/core";
-import { sampleData } from "./templates/ResumeOne/data";
+import { sampleData } from "../../template-collection/ResumeOne/data";
 
 export function NavbarUser() {
   const theme = useMantineTheme();

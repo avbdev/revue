@@ -1,24 +1,24 @@
 export interface Resume {
   resumeId: string;
   resumeTemplate: string;
+  introduction: string;
+  createdAt: string;
+  lastModifiedAt: string;
+  lastModifiedBy: string;
+  currentRevision: string;
+  revisions: any[];
+  profile: Profile;
   educationDetails: EducationDetail[];
   workExperience: WorkExperience[];
   projects: Project[];
-  introduction: string;
   primeActivities: Activity[];
   skills: Skill[];
-  profile: Profile;
-  createdAt: string;
   currentUser: User;
   owner: User;
   contributors: User[];
   readers: User[];
   reviewers: User[];
-  publisher: User[];
-  lastModifiedAt: string;
-  lastModifiedBy: string;
-  revisions: any[];
-  currentRevision: string;
+  publishers: User[];
 }
 
 export interface User {
@@ -74,9 +74,8 @@ export interface Project {
   projectId: string;
   projectName: string;
   role: string;
-  companyId: string;
-  companyName: string;
   clientName: string;
+  company: Company;
   activities: Activity[];
 }
 
@@ -89,10 +88,14 @@ export interface Skill {
 
 export interface WorkExperience {
   wexId: string;
-  companyName: string;
-  companyId: string;
   role: string;
   startDate: string;
   endDate: string;
+  company: Company;
   location: Location;
+}
+
+export interface Company {
+  companyId: string;
+  name: string;
 }

@@ -32,7 +32,7 @@ export const WorkSection: React.FC = () => {
             {sampleData.workExperience.map((wex, index) => {
 
                 const IconNow = IconComp[index];
-                return <Timeline.Item key={wex.wexId} bullet={<IconNow size={12} />} title={wex.companyName}>
+                return <Timeline.Item key={wex.wexId} bullet={<IconNow size={12} />} title={wex.company.name}>
                     <Text key={`${wex.wexId}-company-details`} color="dimmed" size="sm">{wex.role}, {wex.startDate} - {wex.endDate}</Text>
                     <Text key={`${wex.wexId}-location-details`} size="xs" mt={4}>{wex.location.city}, {wex.location.state}, {wex.location.country}</Text>
                 </Timeline.Item>

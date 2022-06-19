@@ -14,8 +14,8 @@ export const sampleTemplate = {
     workExperience: [
         {
             wexId: "",
-            companyName: "",
-            companyId: "",
+            company: {companyName: "",
+            companyId: "",},
             role: "",
             startDate: "",
             endDate: "",
