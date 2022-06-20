@@ -30,8 +30,16 @@ jobs:
     - run: yarn ci
     - run: yarn build --if-present
     
-    - name: Deploy
-      run: yarn deploy:dev --token ${{ secrets.FirebaseHostingToken }}
-      # env:
-      #     CI: false
-      #     FIREBASE_TOKEN: ${{ secrets.FirebaseHostingToken }}
+    # - name: Deploy
+    #   run: yarn deploy:dev
+    #   env:
+    #       CI: false
+    #       FIREBASE_TOKEN: ${{ secrets.FirebaseHostingToken }}
+    
+    - name: Deploy to Firebase  
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+         repoToken: "${{ secrets.GITHUB_TOKEN }}"
+         firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_REVUE_RESUME_BUILDER }}"
+         projectId: revue-resume-builder
+         channelId: main
