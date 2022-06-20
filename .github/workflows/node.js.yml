@@ -40,6 +40,6 @@ jobs:
       uses: FirebaseExtended/action-hosting-deploy@v0
       with:
          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-         firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_REVUE_RESUME_BUILDER }}"
+         firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_REPO_URL }}"
          projectId: revue-resume-builder
          channelId: main
