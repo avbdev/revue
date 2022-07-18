@@ -10,7 +10,6 @@ import { NewResume } from "./pages/resume/NewResume";
 import TemplatePicker, { TemplateTypes } from "./template-collection";
 import { LogoImages } from "./utils/Constants";
 
-
 const actions: SpotlightAction[] = [
   {
     title: "Home",
@@ -40,107 +39,116 @@ const actions: SpotlightAction[] = [
 ];
 
 const App: React.FC = () => {
+  return (
+    <div className="app-container">
+      <MantineProvider theme={{ colorScheme: "dark" }} withGlobalStyles withNormalizeCSS>
+        <SpotlightProvider actions={actions} shortcut={["mod + P", "mod + K", "/"]}>
+          <AppShell
+            padding="md"
+            navbar={
+              <div className="app-content-navbar">
+                <AppNavbar />
+              </div>
+            }
+            header={
+              // <div className="app-header">
+              <Header height={60} p="xs">
+                <div id="header-container" style={{ display: "flex", flexDirection: "row" }}>
+                  {/* <div id="toggle-navbar">
+                    <ActionIcon variant="hover">
+                      <Menu2 size={16} />
+                    </ActionIcon>
+                  </div> */}
+
+                  <div id="logo-container" style={{ display: "flex", height: 150, width: 100 }}>
+                    <Image src={LogoImages["dark"]} />
+                  </div>
+                  {/* <Logo colorScheme={"dark"} /> */}
+                  {/* Header content */}
+                  {/* Resume Builder */}
+                </div>
+              </Header>
+              // </div>
+            }
+            styles={(theme) => ({
+              main: {
+                backgroundColor: theme.colorScheme === "dark" ? theme.colors.dark[8] : theme.colors.gray[0],
+                display: "flex",
+                flex: 1,
+                maxHeight: "90vh",
+                overflow: "auto",
+              },
+            })}
+          >
+            <div className="app-content-page">
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Outlet />
+                    </>
+                  }
+                >
+                  <Route index element={<>Home Page</>} />
+
+                  <Route path="resume">
+                    <Route
+                      path=":resumeId"
+                      element={
+                        <>
+                          <TemplatePicker type={TemplateTypes.ResumeOne} />
+                        </>
+                      }
+                    />
+                    <Route path="new" element={<NewResume />} />
+                    <Route index element={<ResumeHomePage />} />
+                  </Route>
+
+                  <Route path="*" element={<>No page found with this link</>} />
+                </Route>
+              </Routes>
+              {/* Your application here */}
+            </div>
+          </AppShell>
+        </SpotlightProvider>
+      </MantineProvider>
+      {/* </div> */}
+    </div>
+  );
+
   // return (
-  //   <div className="app-container">
-  //     <MantineProvider theme={{ colorScheme: "dark" }} withGlobalStyles withNormalizeCSS>
-  //       <SpotlightProvider actions={actions} shortcut={["mod + P", "mod + K", "/"]}>
-  //         <AppShell
-  //           padding="md"
-  //           navbar={<div className="app-content-navbar"><AppNavbar /></div>}
-  //           header={
-  //             // <div className="app-header">
-  //             <Header height={60} p="xs">
-  //               <div id="header-container" style={{ display: "flex", flexDirection: "row" }}>
-  //                 {/* <div id="toggle-navbar">
-  //                   <ActionIcon variant="hover">
-  //                     <Menu2 size={16} />
-  //                   </ActionIcon>
-  //                 </div> */}
+  //   <div className="app-content-page">
+  //     <Routes>
+  //       <Route
+  //         path="/"
+  //         element={
+  //           <>
+  //             <Outlet />
+  //           </>
+  //         }
+  //       >
+  //         <Route index element={<>Home Page</>} />
 
-  //                 <div id="logo-container" style={{ display: "flex", height: 150, width: 100 }}>
-  //                   <Image src={LogoImages["dark"]} />
-  //                 </div>
-  //                 {/* <Logo colorScheme={"dark"} /> */}
-  //                 {/* Header content */}
-  //                 {/* Resume Builder */}
-  //               </div>
-  //             </Header>
-  //             // </div>
-  //           }
-  //           styles={(theme) => ({
-  //             main: {
-  //               backgroundColor: theme.colorScheme === "dark" ? theme.colors.dark[8] : theme.colors.gray[0], display: "flex", flex: 1, maxHeight: '90vh', overflow: 'auto'
-  //             },
-  //           })}
-  //         >
-  //           <div className="app-content-page">
-  //             <Routes>
-  //               <Route
-  //                 path="/"
-  //                 element={
-  //                   <>
-  //                     <Outlet />
-  //                   </>
-  //                 }
-  //               >
-  //                 <Route index element={<>Home Page</>} />
+  //         <Route path="resume">
+  //           <Route
+  //             path=":resumeId"
+  //             element={
+  //               <>
+  //                 <TemplatePicker type={TemplateTypes.ResumeOne} />
+  //               </>
+  //             }
+  //           />
+  //           <Route path="new" element={<NewResume />} />
+  //           <Route index element={<ResumeHomePage />} />
+  //         </Route>
 
-  //                 <Route path="resume">
-  //                   <Route
-  //                     path=":resumeId"
-  //                     element={
-  //                       <>
-  //                         <TemplatePicker type={TemplateTypes.ResumeOne} />
-  //                       </>
-  //                     }
-  //                   />
-  //                   <Route path="new" element={<NewResume />} />
-  //                   <Route index element={<ResumeHomePage />} />
-  //                 </Route>
-
-  //                 <Route path="*" element={<>No page found with this link</>} />
-  //               </Route>
-  //             </Routes>
-  //             {/* Your application here */}
-  //           </div>
-  //         </AppShell>
-  //       </SpotlightProvider>
-  //     </MantineProvider>
-  //     {/* </div> */}
+  //         <Route path="*" element={<>No page found with this link</>} />
+  //       </Route>
+  //     </Routes>
+  //     {/* Your application here */}
   //   </div>
   // );
-
-
-  return <div className="app-content-page">
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Outlet />
-          </>
-        }
-      >
-        <Route index element={<>Home Page</>} />
-
-        <Route path="resume">
-          <Route
-            path=":resumeId"
-            element={
-              <>
-                <TemplatePicker type={TemplateTypes.ResumeOne} />
-              </>
-            }
-          />
-          <Route path="new" element={<NewResume />} />
-          <Route index element={<ResumeHomePage />} />
-        </Route>
-
-        <Route path="*" element={<>No page found with this link</>} />
-      </Route>
-    </Routes>
-    {/* Your application here */}
-  </div>
   // return <div className="app-container">
   //   <div className="app-header">
   //     Header
