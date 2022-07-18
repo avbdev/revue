@@ -19,6 +19,23 @@ export const ProjectSection: React.FC = () => {
                         Role: {project.role}
                     </code>
                 </div>
+
+                <div key={`${project.projectId}-project-activities`}>
+                    <code>
+                        Activities:
+                    </code>
+
+                    <ul>
+                        {
+                            project.activities.map((activity, index) => {
+
+                                return <li key={`${project.projectId}-${index}-project-activity`}>
+                                    {activity.activityDescription}
+                                </li>
+                            })
+                        }
+                    </ul>
+                </div>
             </div>
         })
         }

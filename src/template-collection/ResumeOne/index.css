@@ -1,33 +1,33 @@
 .resume-container {
-    display: flex;
-    /* margin-left: 23%; */
-    /* flex-direction: column; */
+  display: flex;
+  /* margin-left: 23%; */
+  /* flex-direction: column; */
 }
 
 .resume-content-container {
-    display: flex;
-    flex-direction: column;
-    flex: 6
+  display: flex;
+  flex-direction: column;
+  flex: 6;
 }
 
 .resume-sidebar-container {
-    display: flex;
-    flex-direction: column;
-    flex: 3
+  display: flex;
+  flex-direction: column;
+  flex: 3;
 }
 
 /* Sidebar */
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Name Container */
 
 .name {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Intro
@@ -35,69 +35,64 @@
 Intro Component
 */
 .intro {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
-
-
 
 /* TimeLine */
 
 .timeline {
-    position: absolute;
-    width: 6px;
-    height: 2854px;
-    left: 228px;
-    top: 729px;
+  position: absolute;
+  width: 6px;
+  height: 2854px;
+  left: 228px;
+  top: 729px;
 
-    background: linear-gradient(180deg, #484FA0 7.29%, #277FC3 51.04%, #04B2E7 100%);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-
+  background: linear-gradient(
+    180deg,
+    #484fa0 7.29%,
+    #277fc3 51.04%,
+    #04b2e7 100%
+  );
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 /* Activities */
 
 .activities {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 /* Projects */
 
 .projects {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 /* Work Experience */
 
 .work-experience {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Technical Skills_Full_Length */
 
 .skills {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 /* Education */
 
-
 /* Auto layout */
 
 .education {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- 
-    /* position: absolute; */
- 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  /* position: absolute; */
 }

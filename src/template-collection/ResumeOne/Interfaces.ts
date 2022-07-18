@@ -47,7 +47,7 @@ export interface EducationDetail {
 
 export interface Activity {
   activityId: string;
-  activitiyDescription: string;
+  activityDescription: string;
   keywords: any[];
 }
 

@@ -10,13 +10,24 @@ export const SkillSection: React.FC = () => {
         </div>
 
         {sampleData.skills.map((skill, index) => {
-            return <div key={skill.skillId}>
-                <div key={`${skill.skillId}-skill-category`}>
+            return <div key={skill.skillId} style={{
+                display: 'flex',
+                flexDirection: 'column'
+            }}>
+                <div key={`${skill.skillId}-skill-category`} style={{
+                    marginTop: '1rem',
+                    alignItems: 'center',
+                    display: 'flex'
+                }}>
                     <p><strong>{skill.skillCategory}</strong></p>
 
                 </div>
 
-                <div key={`${skill.skillId}-skill-name`}>
+                <div key={`${skill.skillId}-skill-name`} style={{
+                    marginTop: '1rem',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}>
                     <code>
                         <Group>
                             {skill.customSkills.map((customSkill, index) => {
