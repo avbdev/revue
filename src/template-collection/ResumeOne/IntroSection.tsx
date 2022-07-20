@@ -1,8 +1,9 @@
 import { Blockquote } from "@mantine/core";
 import React from "react";
-import { sampleData } from "./data";
+import { IResumeTemplate } from ".";
+// import { sampleData } from "./data";
 
-export const IntroSection: React.FC = () => {
+export const IntroSection: React.FC<IResumeTemplate> = ({ data: sampleData }) => {
 
     // return <div className="intro" style={{ display: "flex", flexWrap: "wrap" }}>
     //     {/* <code> */}
@@ -11,7 +12,7 @@ export const IntroSection: React.FC = () => {
     // </div>
 
     return <div className="intro" style={{ display: "flex", flexWrap: "wrap" }}>
-        <Blockquote>
+        <Blockquote style={{ fontSize: 12, fontWeight: 700 }}>
             {sampleData.introduction}
         </Blockquote>
     </div>

@@ -1,6 +1,6 @@
 import { AppShell, Header, Image, MantineProvider } from "@mantine/core";
 import { SpotlightAction, SpotlightProvider } from "@mantine/spotlight";
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
 import { Dashboard, FileText, Home } from "tabler-icons-react";
 import "./App.css";
@@ -8,6 +8,8 @@ import { AppNavbar } from "./components/Organisms/AppNavbar";
 import ResumeHomePage from "./pages/resume";
 import { NewResume } from "./pages/resume/NewResume";
 import TemplatePicker, { TemplateTypes } from "./template-collection";
+import { sampleData } from "./template-collection/ResumeOne/data";
+import { Resume } from "./template-collection/ResumeOne/Interfaces";
 import { LogoImages } from "./utils/Constants";
 
 const actions: SpotlightAction[] = [
@@ -39,16 +41,25 @@ const actions: SpotlightAction[] = [
 ];
 
 const App: React.FC = () => {
+  const [colorScheme, setColorScheme] = useState<"light" | "dark">("light");
+
+  const handleThemeChange = (ev?: any, checked?: any) => {
+    console.log('Target', ev.target.value, ev.target.checked)
+
+    setColorScheme(ev.target.checked ? "dark" : "light");
+
+  }
   return (
     <div className="app-container">
-      <MantineProvider theme={{ colorScheme: "dark" }} withGlobalStyles withNormalizeCSS>
+      <MantineProvider theme={{ colorScheme: colorScheme }} withGlobalStyles withNormalizeCSS>
         <SpotlightProvider actions={actions} shortcut={["mod + P", "mod + K", "/"]}>
           <AppShell
             padding="md"
-            navbar={
+            navbar={<>
               <div className="app-content-navbar">
                 <AppNavbar />
               </div>
+            </>
             }
             header={
               // <div className="app-header">
@@ -61,11 +72,21 @@ const App: React.FC = () => {
                   </div> */}
 
                   <div id="logo-container" style={{ display: "flex", height: 150, width: 100 }}>
-                    <Image src={LogoImages["dark"]} />
+                    <Image src={LogoImages[colorScheme]} />
                   </div>
-                  {/* <Logo colorScheme={"dark"} /> */}
-                  {/* Header content */}
-                  {/* Resume Builder */}
+
+                  <div style={{
+                    display: 'flex',
+                    flex: '1 1 0%',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                    paddingTop: '8px'
+                  }}>
+                    <div>
+                      <input id="themeToggle" type={"checkbox"} onClick={handleThemeChange} />
+                      <label htmlFor="themeToggle" style={{ paddingLeft: 10, paddingBottom: 2 }}>Dark Theme</label>
+                    </div>
+                  </div>
                 </div>
               </Header>
               // </div>
@@ -93,14 +114,7 @@ const App: React.FC = () => {
                   <Route index element={<>Home Page</>} />
 
                   <Route path="resume">
-                    <Route
-                      path=":resumeId"
-                      element={
-                        <>
-                          <TemplatePicker type={TemplateTypes.ResumeOne} />
-                        </>
-                      }
-                    />
+                    <Route path=":resumeId" element={<TemplateEditor colorScheme={colorScheme} />} />
                     <Route path="new" element={<NewResume />} />
                     <Route index element={<ResumeHomePage />} />
                   </Route>
@@ -117,54 +131,32 @@ const App: React.FC = () => {
     </div>
   );
 
-  // return (
-  //   <div className="app-content-page">
-  //     <Routes>
-  //       <Route
-  //         path="/"
-  //         element={
-  //           <>
-  //             <Outlet />
-  //           </>
-  //         }
-  //       >
-  //         <Route index element={<>Home Page</>} />
 
-  //         <Route path="resume">
-  //           <Route
-  //             path=":resumeId"
-  //             element={
-  //               <>
-  //                 <TemplatePicker type={TemplateTypes.ResumeOne} />
-  //               </>
-  //             }
-  //           />
-  //           <Route path="new" element={<NewResume />} />
-  //           <Route index element={<ResumeHomePage />} />
-  //         </Route>
-
-  //         <Route path="*" element={<>No page found with this link</>} />
-  //       </Route>
-  //     </Routes>
-  //     {/* Your application here */}
-  //   </div>
-  // );
-  // return <div className="app-container">
-  //   <div className="app-header">
-  //     Header
-  //   </div>
-  //   <div className="app-content">
-
-  //     <div className="app-content-navbar">
-  //       Navbar
-  //     </div>
-
-  //     <div className="app-content-page">
-  //       Page
-  //     </div>
-  //   </div>
-
-  // </div>
 };
+
+const TemplateEditor: React.FC<any> = ({ colorScheme }) => {
+
+  const [data, setData] = useState<Resume>(sampleData);
+
+
+  const handleDataChange = (ev?: any, formData?: any) => {
+    ev?.preventDefault();
+    const updatedData = JSON.parse(ev.target.value) as Resume;
+
+    console.log("Data Changed", updatedData)
+    setData(updatedData)
+
+  }
+
+  return <div style={{ display: "flex", flexDirection: "column" }}>
+    <div className="inputData" style={{ display: "flex", minHeight: 200, flex: 1 }}>
+
+      <label htmlFor="jsonData">JSON Data</label>
+      <textarea id="jsonData" onChange={handleDataChange} value={JSON.stringify(data, null, 2)} rows={658} cols={300} style={{ width: '100%', color: colorScheme === "dark" ? "#fff" : "#000" }} />
+    </div>
+
+    <TemplatePicker data={data} type={TemplateTypes.ResumeOne} />
+  </div>
+}
 
 export default App;
