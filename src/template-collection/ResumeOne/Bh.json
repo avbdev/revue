@@ -7,12 +7,7 @@
   "createdAt": "1655512281333",
   "revisions": [],
   "currentRevision": "001",
-  "currentUser": {
-    "userId": "",
-    "userEmail": "bhardwaj@avb.dev",
-    "fullName": "Bhardwaj Avasarala",
-    "preferredName": "Bhardwaj Avasarala"
-  },
+  "currentUser": { "userId": "", "userEmail": "bhardwaj@avb.dev", "fullName": "Bhardwaj Avasarala", "preferredName": "Bhardwaj Avasarala" },
   "profile": {
     "profileId": "9bbe23f8-e2d5-438d-bfd6-4c56464417f9",
     "firstName": "Venkata Bhardwaj",
@@ -24,14 +19,7 @@
     "phone": "+1660-528-0954",
     "phoneType": "Mobile",
     "email": "bhardwaj@avb.dev",
-    "location": {
-      "city": "Bothell",
-      "state": "WA",
-      "county": "",
-      "zip": "98012",
-      "country": "United States",
-      "address": ""
-    }
+    "location": { "city": "Bothell", "state": "WA", "county": "", "zip": "98012", "country": "United States", "address": "" }
   },
   "educationDetails": [
     {
@@ -43,14 +31,7 @@
       "startDate": "Aug 2016",
       "endDate": "Apr 2018",
       "summary": "",
-      "location": {
-        "city": "Maryville",
-        "state": "MO",
-        "county": "",
-        "zip": "64468",
-        "country": "US",
-        "address": ""
-      }
+      "location": { "city": "Maryville", "state": "MO", "county": "", "zip": "64468", "country": "US", "address": "" }
     },
     {
       "objectId": "8542d27c-4f4b-4e93-9c43-847372e5f641",
@@ -61,14 +42,7 @@
       "startDate": "Sept 2011",
       "endDate": "May 2015",
       "summary": "",
-      "location": {
-        "city": "",
-        "state": "",
-        "county": "",
-        "zip": "",
-        "country": "IN",
-        "address": ""
-      }
+      "location": { "city": "", "state": "", "county": "", "zip": "", "country": "IN", "address": "" }
     }
   ],
   "workExperience": [
@@ -78,14 +52,7 @@
       "role": "Senior Software Engineer",
       "startDate": "Feb 2020",
       "endDate": "Current",
-      "location": {
-        "city": "Redmond",
-        "state": "WA",
-        "county": "",
-        "zip": "98012",
-        "country": "US",
-        "address": ""
-      }
+      "location": { "city": "Redmond", "state": "WA", "county": "", "zip": "98012", "country": "US", "address": "" }
     },
     {
       "wexId": "530fa7a5-089c-4761-a36b-e113e7e26cc1",
@@ -93,14 +60,7 @@
       "role": "Software Engineer",
       "startDate": "July 2018",
       "endDate": "Feb 2020",
-      "location": {
-        "city": "Redmond",
-        "state": "WA",
-        "county": "",
-        "zip": "98012",
-        "country": "US",
-        "address": ""
-      }
+      "location": { "city": "Redmond", "state": "WA", "county": "", "zip": "98012", "country": "US", "address": "" }
     },
     {
       "wexId": "7e6ab2b4-42a1-492f-8f2c-90c9c0ff0d09",
@@ -108,14 +68,7 @@
       "role": "Software Engineer",
       "startDate": "March 2015",
       "endDate": "August 2016",
-      "location": {
-        "city": "Hyderabad",
-        "state": "TS",
-        "county": "",
-        "zip": "",
-        "country": "IN",
-        "address": ""
-      }
+      "location": { "city": "Hyderabad", "state": "TS", "county": "", "zip": "", "country": "IN", "address": "" }
     }
   ],
   "projects": [
@@ -126,76 +79,20 @@
       "company": { "companyId": "", "name": "Zen3 Infoslutions America" },
       "clientName": "Applied Materials",
       "activities": [
-        {
-          "activityId": "8804a2bc-35e0-48e5-8966-bec525162e6d",
-          "activityDescription": "Develop features for a product",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Improve performance for react apps",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Improve code quality, load time for the app",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Research, Plan and improve the architecture to address issues in the application",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Setup alerts for all the connected systems for monitoring",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Manage, develop, and maintain infrastructure for cloud app",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Monitor and fix security bugs reported from SonarQube/Blackduck during the code scans",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Design, develop and implement solutions to use cloud resources for the application",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Design and develop architecture for the application on Cloud Infrastructure (Azure)",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Configure build/release pipelines for the UI applications",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Identify root cause for the live site issues",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Drive the outages bridge by actively engaging with different teams to resolve the issue",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Addressing user issues/tickets",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Sync up and manage offshore teams to deliver sprint tasks",
-          "keywords": []
-        }
+        { "activityId": "8804a2bc-35e0-48e5-8966-bec525162e6d", "activityDescription": "Develop features for a product", "keywords": [] },
+        { "activityId": "", "activityDescription": "Improve performance for react apps", "keywords": [] },
+        { "activityId": "", "activityDescription": "Improve code quality, load time for the app", "keywords": [] },
+        { "activityId": "", "activityDescription": "Research, Plan and improve the architecture to address issues in the application", "keywords": [] },
+        { "activityId": "", "activityDescription": "Setup alerts for all the connected systems for monitoring", "keywords": [] },
+        { "activityId": "", "activityDescription": "Manage, develop, and maintain infrastructure for cloud app", "keywords": [] },
+        { "activityId": "", "activityDescription": "Monitor and fix security bugs reported from SonarQube/Blackduck during the code scans", "keywords": [] },
+        { "activityId": "", "activityDescription": "Design, develop and implement solutions to use cloud resources for the application", "keywords": [] },
+        { "activityId": "", "activityDescription": "Design and develop architecture for the application on Cloud Infrastructure (Azure)", "keywords": [] },
+        { "activityId": "", "activityDescription": "Configure build/release pipelines for the UI applications", "keywords": [] },
+        { "activityId": "", "activityDescription": "Identify root cause for the live site issues", "keywords": [] },
+        { "activityId": "", "activityDescription": "Drive the outages bridge by actively engaging with different teams to resolve the issue", "keywords": [] },
+        { "activityId": "", "activityDescription": "Addressing user issues/tickets", "keywords": [] },
+        { "activityId": "", "activityDescription": "Sync up and manage offshore teams to deliver sprint tasks", "keywords": [] }
       ]
     },
     {
@@ -215,19 +112,11 @@
           "activityDescription": "Involved in developing UI/UX from mockups to a fully functional web app using React.js, Redux and Typescript which is responsive as well as cross browser compatible",
           "keywords": []
         },
+        { "activityId": "", "activityDescription": "Design and develop reusable components for the application", "keywords": [] },
+        { "activityId": "", "activityDescription": "Used design patterns like atomic design and singleton for the app", "keywords": [] },
         {
           "activityId": "",
-          "activityDescription": "Design and develop reusable components for the application",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Used design patterns like atomic design and singleton for the app",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Involved in developing the REST API's for different microservices and middle-tier services using ASP.NET, C#.NET following SOLID principles",
+          "activityDescription": "Involved in developing the REST API’s for different microservices and middle-tier services using ASP.NET, C#.NET following SOLID principles",
           "keywords": []
         },
         {
@@ -235,31 +124,19 @@
           "activityDescription": "Implemented authentication feature for multiple front-end apps using mechanisms like PKCE(Proof Key for Code Exchange) using OpenID protocol",
           "keywords": []
         },
-        {
-          "activityId": "",
-          "activityDescription": "Defined authorization policies to secure API's based on business requirements using OAuth protocol",
-          "keywords": []
-        },
+        { "activityId": "", "activityDescription": "Defined authorization policies to secure API’s based on business requirements using OAuth protocol", "keywords": [] },
         {
           "activityId": "",
           "activityDescription": "Involved in developing extensions for Visual Studio Code and Visual Studio for Teams Toolkit that makes development and submission of apps seamless for developers",
           "keywords": []
         },
-        {
-          "activityId": "",
-          "activityDescription": "Involved in building new CI/CD pipelines for the front-end client app",
-          "keywords": []
-        },
+        { "activityId": "", "activityDescription": "Involved in building new CI/CD pipelines for the front-end client app", "keywords": [] },
         {
           "activityId": "",
           "activityDescription": "Improved the efficiency of the existing CI/CD build and release pipelines by enabling caching for node_modules, static assets which improved the build and release time by more than 100%.",
           "keywords": []
         },
-        {
-          "activityId": "",
-          "activityDescription": "Used Git for source control",
-          "keywords": []
-        }
+        { "activityId": "", "activityDescription": "Used Git for source control", "keywords": [] }
       ]
     },
     {
@@ -274,32 +151,15 @@
           "activityDescription": "Involved in moderating different builds and release pipelines, agents and tracking its performance.",
           "keywords": []
         },
-
-        {
-          "activityId": "",
-          "activityDescription": "Involved in creating task groups and making its use in different pipelines.",
-          "keywords": []
-        },
+        { "activityId": "", "activityDescription": "Involved in creating task groups and making its use in different pipelines.", "keywords": [] },
         {
           "activityId": "",
           "activityDescription": "Involved in identifying the type of failures and reaching out internal and external teams for service level issues.",
           "keywords": []
         },
-        {
-          "activityId": "",
-          "activityDescription": "Involved in managing artifacts and making its use in different release definitions.",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Involved in creating visualizations using the data from SQL and Cosmos DB in PowerBI.",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Involved in fixing the agents in Azure by identifying the problem.",
-          "keywords": []
-        },
+        { "activityId": "", "activityDescription": "Involved in managing artifacts and making its use in different release definitions.", "keywords": [] },
+        { "activityId": "", "activityDescription": "Involved in creating visualizations using the data from SQL and Cosmos DB in PowerBI.", "keywords": [] },
+        { "activityId": "", "activityDescription": "Involved in fixing the agents in Azure by identifying the problem.", "keywords": [] },
         {
           "activityId": "",
           "activityDescription": "Involved in tracking the performance of agents across all the pipelines and monitor it daily, in case of any regressions would drill down to the actual change causing that issue and make that fixed by the owner of that commit.",
@@ -307,7 +167,7 @@
         },
         {
           "activityId": "",
-          "activityDescription": "Involved in developing the tools for different build templates using javascript and utilizing public and private REST API's using C#.NET.",
+          "activityDescription": "Involved in developing the tools for different build templates using javascript and utilizing public and private REST API’s using C#.NET.",
           "keywords": []
         }
       ]
@@ -321,10 +181,9 @@
       "activities": [
         {
           "activityId": "56857f29-1ca4-4d64-8a76-f0e8c8248b71",
-          "activityDescription": "Involved in developing the REST API's for different microservices and middle-tier services using ASP.NET, C#.NET utilizing .NET framework and following SOLID principles.",
+          "activityDescription": "Involved in developing the REST API’s for different microservices and middle-tier services using ASP.NET, C#.NET utilizing .NET framework and following SOLID principles.",
           "keywords": []
         },
-
         {
           "activityId": "",
           "activityDescription": "Involved in integrating different LMS (Learning Management System) using the .NET Web API 2.0 to a middle tier service for ClassNotebook.",
@@ -347,19 +206,15 @@
         },
         {
           "activityId": "",
-          "activityDescription": "Involved in integrating different oEmbed providers to OneNote Web, Desktop and Mobile clients by consuming the REST API's from the providers and integrating in a microservice using C#.NET.",
+          "activityDescription": "Involved in integrating different oEmbed providers to OneNote Web, Desktop and Mobile clients by consuming the REST API’s from the providers and integrating in a microservice using C#.NET.",
           "keywords": []
         },
         {
           "activityId": "",
-          "activityDescription": "Involved in creating tools for verifying the third-party content across all CDN's and creating unit and Integration tests for new and existing functionalities using powershell scripts.",
+          "activityDescription": "Involved in creating tools for verifying the third-party content across all CDN’s and creating unit and Integration tests for new and existing functionalities using powershell scripts.",
           "keywords": []
         },
-        {
-          "activityId": "",
-          "activityDescription": "Source Depot and Git was used for version control and EV2 deployment technology for deploying service builds",
-          "keywords": []
-        }
+        { "activityId": "", "activityDescription": "Source Depot and Git was used for version control and EV2 deployment technology for deploying service builds", "keywords": [] }
       ]
     },
     {
@@ -374,37 +229,16 @@
           "activityDescription": "Involved in the development of a web application using ASP.NET and C#.NET",
           "keywords": []
         },
-
-        {
-          "activityId": "",
-          "activityDescription": "Involved software development life cycle (SDLC) and multilayered architecture and follows agile methodology.",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Developed functionalities and controls to be implemented in a content management system (CMS).",
-          "keywords": []
-        },
+        { "activityId": "", "activityDescription": "Involved software development life cycle (SDLC) and multilayered architecture and follows agile methodology.", "keywords": [] },
+        { "activityId": "", "activityDescription": "Developed functionalities and controls to be implemented in a content management system (CMS).", "keywords": [] },
         {
           "activityId": "",
           "activityDescription": "Used the mobile first principle in developing UI for the websites with extensive use of HTML, CSS, Javascript, jQuery and Ajax.",
           "keywords": []
         },
-        {
-          "activityId": "",
-          "activityDescription": "Involved in creating custom controls based on Microsoft's in-house API for the CMS.",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Involved in debugging and resolving active bugs found in production environment.",
-          "keywords": []
-        },
-        {
-          "activityId": "",
-          "activityDescription": "Used Team Foundation Server for source control.",
-          "keywords": []
-        }
+        { "activityId": "", "activityDescription": "Involved in creating custom controls based on Microsoft’s in-house API for the CMS.", "keywords": [] },
+        { "activityId": "", "activityDescription": "Involved in debugging and resolving active bugs found in production environment.", "keywords": [] },
+        { "activityId": "", "activityDescription": "Used Team Foundation Server for source control.", "keywords": [] }
       ]
     }
   ],
@@ -429,11 +263,7 @@
       "activityDescription": "Implement authentication for the multiple web applications based on OAuth2 and OpenID protocols.",
       "keywords": []
     },
-    {
-      "activityId": "e3c6b3aa-883f-4c4e-9222-51d4ced0c6f9",
-      "activityDescription": "Develop Rest API's based on microservices architecture using .NET Core.",
-      "keywords": []
-    },
+    { "activityId": "e3c6b3aa-883f-4c4e-9222-51d4ced0c6f9", "activityDescription": "Develop Rest API's based on microservices architecture using .NET Core.", "keywords": [] },
     {
       "activityId": "26623dfd-85b0-42b8-8ee3-6d84de1ac0c4",
       "activityDescription": "Configure build and release pipelines for the applications in Azure DevOps using yaml.",
@@ -456,42 +286,17 @@
     }
   ],
   "skills": [
-    {
-      "skillId": "522215b7-6f6a-46e1-ac7f-540a78608213",
-      "type": "",
-      "skillCategory": "Languages",
-      "customSkills": ["Javascript", "Typescript", "C#", "Java"]
-    },
+    { "skillId": "522215b7-6f6a-46e1-ac7f-540a78608213", "type": "", "skillCategory": "Languages", "customSkills": ["Javascript", "Typescript", "C#", "Java"] },
     {
       "skillId": "323bb44a-3c81-4bf5-b84a-9bdb837b2be5",
       "type": "",
       "skillCategory": "Web",
       "customSkills": ["React", "Angular", "NodeJs", ".Net Core", ".Net Framework", "API Design", "Rest API's"]
     },
-    {
-      "skillId": "91cb2d41-d6b9-4edc-8b2f-b0035c557058",
-      "type": "",
-      "skillCategory": "Databases",
-      "customSkills": ["Microsoft SQL", "Cosmos DB", "Mongo DB"]
-    },
-    {
-      "skillId": "0fff99c8-3d06-4092-b928-15acf3bad6fb",
-      "type": "",
-      "skillCategory": "Version Control",
-      "customSkills": ["Git", "TFS", "Source Depot"]
-    },
-    {
-      "skillId": "584a6e11-4bef-4b43-b6e9-43f0a64f7631",
-      "type": "",
-      "skillCategory": "Build Management",
-      "customSkills": ["Azure DevOps", "Jenkins"]
-    },
-    {
-      "skillId": "350518f0-8efd-448e-b61e-8d1984556790",
-      "type": "",
-      "skillCategory": "Cloud",
-      "customSkills": ["Microsoft Azure"]
-    },
+    { "skillId": "91cb2d41-d6b9-4edc-8b2f-b0035c557058", "type": "", "skillCategory": "Databases", "customSkills": ["Microsoft SQL", "Cosmos DB", "Mongo DB"] },
+    { "skillId": "0fff99c8-3d06-4092-b928-15acf3bad6fb", "type": "", "skillCategory": "Version Control", "customSkills": ["Git", "TFS", "Source Depot"] },
+    { "skillId": "584a6e11-4bef-4b43-b6e9-43f0a64f7631", "type": "", "skillCategory": "Build Management", "customSkills": ["Azure DevOps", "Jenkins"] },
+    { "skillId": "350518f0-8efd-448e-b61e-8d1984556790", "type": "", "skillCategory": "Cloud", "customSkills": ["Microsoft Azure"] },
     {
       "skillId": "dc7c1191-b4cc-4f60-81ce-a8f42e525e2b",
       "type": "",
@@ -499,47 +304,9 @@
       "customSkills": ["Fluent UI (Office UI Fabric)", "Fluent Northstar (Microsoft Teams UI Library)", "Bootstrap", "Material Design"]
     }
   ],
-  "owner": {
-    "userId": "",
-    "userEmail": "",
-    "fullName": "",
-    "preferredName": "",
-    "role": "Creator"
-  },
-  "contributors": [
-    {
-      "userId": "",
-      "userEmail": "",
-      "fullName": "",
-      "preferredName": "",
-      "role": "Contributor"
-    }
-  ],
-  "readers": [
-    {
-      "userId": "",
-      "userEmail": "",
-      "fullName": "",
-      "preferredName": "",
-      "role": "Reader"
-    }
-  ],
-  "reviewers": [
-    {
-      "userId": "",
-      "userEmail": "",
-      "fullName": "",
-      "preferredName": "",
-      "role": "Reviewer"
-    }
-  ],
-  "publishers": [
-    {
-      "userId": "",
-      "userEmail": "",
-      "fullName": "",
-      "preferredName": "",
-      "role": "Publisher"
-    }
-  ]
+  "owner": { "userId": "", "userEmail": "", "fullName": "", "preferredName": "", "role": "Creator" },
+  "contributors": [{ "userId": "", "userEmail": "", "fullName": "", "preferredName": "", "role": "Contributor" }],
+  "readers": [{ "userId": "", "userEmail": "", "fullName": "", "preferredName": "", "role": "Reader" }],
+  "reviewers": [{ "userId": "", "userEmail": "", "fullName": "", "preferredName": "", "role": "Reviewer" }],
+  "publishers": [{ "userId": "", "userEmail": "", "fullName": "", "preferredName": "", "role": "Publisher" }]
 }

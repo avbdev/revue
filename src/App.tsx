@@ -1,6 +1,6 @@
 import { AppShell, Header, Image, MantineProvider } from "@mantine/core";
 import { SpotlightAction, SpotlightProvider } from "@mantine/spotlight";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
 import { Dashboard, FileText, Home } from "tabler-icons-react";
 import "./App.css";
@@ -9,6 +9,37 @@ import ResumeHomePage from "./pages/resume";
 import { NewResume } from "./pages/resume/NewResume";
 import TemplatePicker, { TemplateTypes } from "./template-collection";
 import { LogoImages } from "./utils/Constants";
+
+import { Client, Databases, Account } from "appwrite";
+
+export const client = new Client();
+
+client.setEndpoint("https://apdb.light.network/v1").setProject("62d46e892cf08785397a");
+
+// Project ID : 62d46e892cf08785397a
+// Database ID: 62d46f270f7c4a972760
+// User-Resume Collection: 62d533c41f4ace64319e
+export const revueDB = new Databases(client, "62d46f270f7c4a972760");
+export const account = new Account(client);
+
+// export const session = account.createEmailSession("bhardwaj@avb.dev", "Test1234");
+
+export const revueJSON = async () => {
+  let res = {};
+  // await account.createEmailSession("bhardwaj@avb.dev", "Test1234");
+  const doc = await revueDB.getDocument("62d533c41f4ace64319e", "62d54154abead5bb139f");
+
+  // doc.then(
+  //   function (response) {
+  //     res = JSON.parse(response.resumeJson);
+  //     console.log(response); // Success
+  //   },
+  //   function (error) {
+  //     console.log(error); // Failure
+  //   }
+  // );
+  return JSON.parse(JSON.stringify(doc.resumeJson));
+};
 
 const actions: SpotlightAction[] = [
   {
@@ -39,6 +70,17 @@ const actions: SpotlightAction[] = [
 ];
 
 const App: React.FC = () => {
+  const [resumeJson, setResumeJson] = useState<any>();
+
+  useEffect(() => {
+    const data = async () => {
+      const data = await revueJSON();
+      const res = JSON.parse(data.resumeJson);
+      setResumeJson(res);
+      console.log("Data in APP", res);
+    };
+    data();
+  }, []);
   return (
     <div className="app-container">
       <MantineProvider theme={{ colorScheme: "dark" }} withGlobalStyles withNormalizeCSS>

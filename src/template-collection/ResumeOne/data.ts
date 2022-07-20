@@ -1,4 +1,8 @@
+// import { revueJSON } from "../../Appwrite";
+// import { revueJSON } from "../../App";
 import { Resume } from "./Interfaces";
+
+// revueJSON();
 
 export const sampleData: Resume = {
   resumeId: "790ed4b2-ae15-4004-b6c4-9653705a6aef",
@@ -215,7 +219,8 @@ export const sampleData: Resume = {
         },
         {
           activityId: "",
-          activityDescription: "Involved in developing UI/UX from mockups to a fully functional web app using React.js, Redux and Typescript which is responsive as well as cross browser compatible",
+          activityDescription:
+            "Involved in developing UI/UX from mockups to a fully functional web app using React.js, Redux and Typescript which is responsive as well as cross browser compatible",
           keywords: [],
         },
         {
@@ -245,7 +250,8 @@ export const sampleData: Resume = {
         },
         {
           activityId: "",
-          activityDescription: "Involved in developing extensions for Visual Studio Code and Visual Studio for Teams Toolkit that makes development and submission of apps seamless for developers",
+          activityDescription:
+            "Involved in developing extensions for Visual Studio Code and Visual Studio for Teams Toolkit that makes development and submission of apps seamless for developers",
           keywords: [],
         },
         {
@@ -255,7 +261,8 @@ export const sampleData: Resume = {
         },
         {
           activityId: "",
-          activityDescription: "Improved the efficiency of the existing CI/CD build and release pipelines by enabling caching for node_modules, static assets which improved the build and release time by more than 100%.",
+          activityDescription:
+            "Improved the efficiency of the existing CI/CD build and release pipelines by enabling caching for node_modules, static assets which improved the build and release time by more than 100%.",
           keywords: [],
         },
         {
@@ -305,7 +312,8 @@ export const sampleData: Resume = {
         },
         {
           activityId: "",
-          activityDescription: "Involved in tracking the performance of agents across all the pipelines and monitor it daily, in case of any regressions would drill down to the actual change causing that issue and make that fixed by the owner of that commit.",
+          activityDescription:
+            "Involved in tracking the performance of agents across all the pipelines and monitor it daily, in case of any regressions would drill down to the actual change causing that issue and make that fixed by the owner of that commit.",
           keywords: [],
         },
         {
@@ -313,7 +321,6 @@ export const sampleData: Resume = {
           activityDescription: "Involved in developing the tools for different build templates using javascript and utilizing public and private REST API’s using C#.NET.",
           keywords: [],
         },
-
       ],
     },
     {
@@ -325,7 +332,8 @@ export const sampleData: Resume = {
       activities: [
         {
           activityId: "56857f29-1ca4-4d64-8a76-f0e8c8248b71",
-          activityDescription: "Involved in developing the REST API’s for different microservices and middle-tier services using ASP.NET, C#.NET utilizing .NET framework and following SOLID principles.",
+          activityDescription:
+            "Involved in developing the REST API’s for different microservices and middle-tier services using ASP.NET, C#.NET utilizing .NET framework and following SOLID principles.",
           keywords: [],
         },
 
@@ -336,27 +344,32 @@ export const sampleData: Resume = {
         },
         {
           activityId: "",
-          activityDescription: "Involved in logging telemetry using .NET framework and building dashboards based on the business requirements using logging practices described in Microsoft Guidelines for Logging Customer Data and used Cosmos DB to store the data.",
+          activityDescription:
+            "Involved in logging telemetry using .NET framework and building dashboards based on the business requirements using logging practices described in Microsoft Guidelines for Logging Customer Data and used Cosmos DB to store the data.",
           keywords: [],
         },
         {
           activityId: "",
-          activityDescription: "Involved in deploying the multiple services in Service Fabric Clusters and creating deployment Powershell scripts for the Azure Service Fabric Clusters.",
+          activityDescription:
+            "Involved in deploying the multiple services in Service Fabric Clusters and creating deployment Powershell scripts for the Azure Service Fabric Clusters.",
           keywords: [],
         },
         {
           activityId: "",
-          activityDescription: "Involved in reducing the bandwidth for deployment by creating an incremental deployment tool using VSTS Git API for static content using C#.Net and NodeJS.",
+          activityDescription:
+            "Involved in reducing the bandwidth for deployment by creating an incremental deployment tool using VSTS Git API for static content using C#.Net and NodeJS.",
           keywords: [],
         },
         {
           activityId: "",
-          activityDescription: "Involved in integrating different oEmbed providers to OneNote Web, Desktop and Mobile clients by consuming the REST API’s from the providers and integrating in a microservice using C#.NET.",
+          activityDescription:
+            "Involved in integrating different oEmbed providers to OneNote Web, Desktop and Mobile clients by consuming the REST API’s from the providers and integrating in a microservice using C#.NET.",
           keywords: [],
         },
         {
           activityId: "",
-          activityDescription: "Involved in creating tools for verifying the third-party content across all CDN’s and creating unit and Integration tests for new and existing functionalities using powershell scripts.",
+          activityDescription:
+            "Involved in creating tools for verifying the third-party content across all CDN’s and creating unit and Integration tests for new and existing functionalities using powershell scripts.",
           keywords: [],
         },
         {
@@ -378,7 +391,6 @@ export const sampleData: Resume = {
           activityDescription: "Involved in the development of a web application using ASP.NET and C#.NET",
           keywords: [],
         },
-
 
         {
           activityId: "",
@@ -416,26 +428,22 @@ export const sampleData: Resume = {
   primeActivities: [
     {
       activityId: "53d57052-a99b-456f-8dd3-765abcaa4cc2",
-      activityDescription:
-        "Develop interactive, scalable and reusable components for web applications, based on the business requirements using React library.",
+      activityDescription: "Develop interactive, scalable and reusable components for web applications, based on the business requirements using React library.",
       keywords: [],
     },
     {
       activityId: "73f863d1-0933-48f9-93f6-8a0f3dcd685c",
-      activityDescription:
-        "Develop web applications using custom design controls from FluentUI, FluentUI Northstar and Bootstrap design libraries.",
+      activityDescription: "Develop web applications using custom design controls from FluentUI, FluentUI Northstar and Bootstrap design libraries.",
       keywords: [],
     },
     {
       activityId: "c7553f97-9fe4-4550-b8e2-71e25c7adfaf",
-      activityDescription:
-        "Manage and control the state of the application using Redux, using  redux-thunkware as middleware.",
+      activityDescription: "Manage and control the state of the application using Redux, using  redux-thunkware as middleware.",
       keywords: [],
     },
     {
       activityId: "c2054652-06fe-41ed-a659-2a80ffc85a78",
-      activityDescription:
-        "Implement authentication for the multiple web applications based on OAuth2 and OpenID protocols.",
+      activityDescription: "Implement authentication for the multiple web applications based on OAuth2 and OpenID protocols.",
       keywords: [],
     },
     {
@@ -450,8 +458,7 @@ export const sampleData: Resume = {
     },
     {
       activityId: "735745d1-741e-4c55-b5a3-5c8b9167eb0a",
-      activityDescription:
-        "Experience in managing code with various version controlling systems like Git, TFS and Source Depot.",
+      activityDescription: "Experience in managing code with various version controlling systems like Git, TFS and Source Depot.",
       keywords: [],
     },
     {
@@ -461,8 +468,7 @@ export const sampleData: Resume = {
     },
     {
       activityId: "55281f96-07cd-43fa-ba2d-7657741fa839",
-      activityDescription:
-        "Create deployment scripts by using Azure DevOps API's to reduce bandwidth by 40% per deployment.",
+      activityDescription: "Create deployment scripts by using Azure DevOps API's to reduce bandwidth by 40% per deployment.",
       keywords: [],
     },
   ],
@@ -513,12 +519,7 @@ export const sampleData: Resume = {
       skillId: "dc7c1191-b4cc-4f60-81ce-a8f42e525e2b",
       type: "",
       skillCategory: "Design Libraries",
-      customSkills: [
-        "Fluent UI (Office UI Fabric)",
-        "Fluent Northstar (Microsoft Teams UI Library)",
-        "Bootstrap",
-        "Material Design",
-      ],
+      customSkills: ["Fluent UI (Office UI Fabric)", "Fluent Northstar (Microsoft Teams UI Library)", "Bootstrap", "Material Design"],
       // customSkills: ["Fluent UI (Office UI Fabric)", "Fluent Northstar (Microsoft Teams UI Library)", "Bootstrap", "Material Design"]
     },
   ],
