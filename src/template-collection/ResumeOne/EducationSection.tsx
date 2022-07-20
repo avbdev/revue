@@ -1,7 +1,8 @@
 import React from "react";
-import { sampleData } from "./data";
+import { IResumeTemplate } from ".";
+// import { sampleData } from "./data";
 
-export const EducationSection: React.FC = () => {
+export const EducationSection: React.FC<IResumeTemplate> = ({ data: sampleData }) => {
 
     return <div className="education">
         <div id="education-title-header">

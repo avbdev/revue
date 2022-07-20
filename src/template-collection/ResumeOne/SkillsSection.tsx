@@ -1,8 +1,9 @@
 import React from "react";
-import { sampleData } from "./data";
+// import { sampleData } from "./data";
 import { Badge, Group } from '@mantine/core';
+import { IResumeTemplate } from ".";
 
-export const SkillSection: React.FC = () => {
+export const SkillSection: React.FC<IResumeTemplate> = ({ data: sampleData }) => {
 
     return <div className="skills">
         <div id="skills-title-header">
