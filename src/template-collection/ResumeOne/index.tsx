@@ -20,7 +20,7 @@ const ResumeOne: React.FC<IResumeTemplate> = ({ data }) => {
         <div id="resume-content" className="resume-content-container">
             <NameSection data={data} />
             <WorkSection data={data} />
-            <ProjectSection data={data} />
+            {/* <ProjectSection data={data} /> */}
             <ActivitySection data={data} />
         </div>
 
