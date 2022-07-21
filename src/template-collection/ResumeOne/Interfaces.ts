@@ -1,23 +1,45 @@
 export interface Resume {
+  // Metadata
   resumeId: string;
-
   resumeTemplate: string;
   introduction: string;
-
   createdAt: string;
   lastModifiedAt: string;
   lastModifiedBy: string;
   currentRevision: string;
   revisions: any[];
+  users: ResumeUsers;
 
+  // Profile Details
   profile: Profile;
+
+  // Education
   educationDetails: EducationDetail[];
+
+  // Work Experience
   workExperience: WorkExperience[];
-  projects: Project[];
+
+  // Projects
+  // projects: Project[];
+
+  // Activities
   primeActivities: Activity[];
+
+  // Skills
   skills: Skill[];
 
-  currentUser: User;
+  // User
+  currentUser: User; // TODO: Validate if this is required. This data can be injected in the UI and no value to store in DB
+}
+
+export interface IResumeTemplate {
+  templateId: string;
+  name: string;
+  templateData: any;
+  users: ResumeUsers[];
+}
+
+export interface ResumeUsers {
   owner: User;
   contributors: User[];
   readers: User[];
@@ -47,7 +69,7 @@ export interface EducationDetail {
 
 export interface Activity {
   activityId: string;
-  activitiyDescription: string;
+  activityDescription: string;
   keywords: any[];
 }
 
@@ -80,6 +102,8 @@ export interface Project {
   role: string;
   clientName: string;
   company: Company;
+  fromDate: string;
+  toDate: string;
   activities: Activity[];
 }
 
@@ -97,6 +121,7 @@ export interface WorkExperience {
   endDate: string;
   company: Company;
   location: Location;
+  projects: Project[];
 }
 
 export interface Company {

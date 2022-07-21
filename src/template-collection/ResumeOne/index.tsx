@@ -7,22 +7,27 @@ import { ProjectSection } from "./ProjectSection";
 import { SkillSection } from "./SkillsSection";
 import { WorkSection } from "./WorkSection";
 import "./index.css"
+import { Resume } from "./Interfaces";
 
-const ResumeOne: React.FC = () => {
+export interface IResumeTemplate {
+    data: Resume
+}
+
+const ResumeOne: React.FC<IResumeTemplate> = ({ data }) => {
 
     return <div id="template-resume-one" className="resume-container">
 
         <div id="resume-content" className="resume-content-container">
-            <NameSection />
-            <WorkSection />
-            <ProjectSection />
-            <ActivitySection />
+            <NameSection data={data} />
+            <WorkSection data={data} />
+            {/* <ProjectSection data={data} /> */}
+            <ActivitySection data={data} />
         </div>
 
         <div id="resume-sidebar" className="resume-sidebar-container">
-            <IntroSection />
-            <EducationSection />
-            <SkillSection />
+            <IntroSection data={data} />
+            <EducationSection data={data} />
+            <SkillSection data={data} />
         </div>
 
     </div>

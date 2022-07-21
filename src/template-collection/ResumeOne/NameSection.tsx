@@ -1,8 +1,9 @@
 import React from "react";
-import { sampleData } from "./data";
+import { IResumeTemplate } from ".";
+// import { sampleData } from "./data";
 import "./NameSection.css";
 
-export const NameSection: React.FC = () => {
+export const NameSection: React.FC<IResumeTemplate> = ({ data: sampleData }) => {
   const { city, state, zip, country } = sampleData.profile.location;
   const address = `${city}, ${state}, ${zip}, ${country}`;
 
