@@ -13,7 +13,7 @@ import { LogoImages } from "./utils/Constants";
 const actions: SpotlightAction[] = [
   {
     title: "Home",
-    description: "Get to home page",
+    description: "Get to home page of the application.",
     onTrigger: () => console.log("Home"),
     icon: <Home size={18} />,
   },
